@@ -17,7 +17,7 @@ jobs:
       - name: python commands
         run:  |
           import platform
-          print(platform.processor())
+          #print(platform.processor())
           shell: python
 
 
@@ -26,6 +26,7 @@ jobs:
 
   my-second-job: 
      runs-on: windows-latest
+     needs: ["my-job"]
      steps:
        - name: Directory
          run: get-location
