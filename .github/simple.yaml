@@ -1,0 +1,24 @@
+name: shell commands
+
+on: push
+
+jobs:
+  run-shell-command:
+    run-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v3
+      - name: echo string
+        run: echo "Hello, world!"
+      - name:  multi string
+        run: |
+          node -v
+          npm -v
+
+
+
+
+
+
+
+
