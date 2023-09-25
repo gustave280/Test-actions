@@ -29,9 +29,8 @@ jobs:
 
       - name: Terraform Plan
         run: terraform plan
-      - name: Terraform Plan
-        run: terraform plan
-        working-directory: /Users/joseph/Desktop/Git-demo/.github/workflows
+      
+      
 
 
 
